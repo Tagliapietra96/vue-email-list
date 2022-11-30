@@ -18,7 +18,7 @@ createApp({
     // ************ FUNZIONI ************
     methods: {
         getData(){
-            axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((resp) => {
+            axios.get("https://flynn.boolean.careers/exercises/api/random/mail?" + Math.random()).then((resp) => {
                 this.mailList.push(resp.data.response)
             });
         }
