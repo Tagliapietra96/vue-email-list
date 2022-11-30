@@ -20,9 +20,9 @@
     <div id="my-app">
 
         <main class="container vh-100 d-flex align-items-center justify-content-center">
-            <div class="border">
-                <ul>
-                    <li></li>
+            <div v-show="mailList.length === 10" class="border p-5 text-center w-75 rounded-3 shadow">
+                <ul class="p-0 m-0 list-unstyled">
+                    <li v-for="element in mailList" class="py-2">{{element}}</li>
                 </ul>
             </div>
         </main>
